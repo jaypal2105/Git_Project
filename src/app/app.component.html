@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Routing</title>
+
+<style>
+	/* Custom style */
+    .navbar{
+        margin-bottom: 1rem;
+    }
+</style>
+</head>
+<body>
+<div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse1">
+                <div class="navbar-nav">
+                    <a routerLink="" class="nav-item nav-link active">Home</a>
+                    <a routerLink="about" class="nav-item nav-link">About</a>
+                    <!-- <a (click)="clickEvent()" class="nav-item nav-link">About</a> -->
+                    <a routerLink="contact" class="nav-item nav-link">Contact</a>
+                    <a routerLink="dept/14/Farm_Structure" class="nav-item nav-link">Department</a>
+
+
+
+                    <a routerLink="parent" class="nav-item nav-link active">Parent to Child</a>  <!-- @input -->
+                    <a routerLink="parent1" class="nav-item nav-link active">Child to Parent</a>  <!-- @Output -->
+                    <a routerLink="p1" class="nav-item nav-link active">Child to Parent</a>  <!-- @Output -->
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<router-outlet></router-outlet>
